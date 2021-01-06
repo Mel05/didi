@@ -18,61 +18,104 @@
 <body>
 
 <header class="header">
-    <div class="container">
+        <div class="container">
 
-      <div class="header__title" data-scroll="#intro">
-        <div class="header__left">
-                <a  href="index.html#">
-                <img class="logo__black" src="assets/img/logo-black.png" alt="">
+            <div class="header__body">
+
+                <a href="index.html" class="header__logo">
+                    <img src="assets/img/logo-black.png" alt="">
                 </a>
 
+            <div class="header__menu">
 
-            <nav class="nav__menu" id="nav">
-                <a class="nav__link" href="gallery_avto.html"> Галерея </a>
-                <a class="nav__link" href="services.html"> Услуги и цены </a>
-                <a class="nav__link" href="contacts.html" data-scroll="#footer"> Контакты </a>
-            </nav>
+               <div class="column">
+                <div class="header__left">
+                <nav class="header__nav__menu">
+                    <ul class="header__list">
 
-        </div>
+                        <li>
+                            <a href="gallery_avto.html" class="menu__link"> Галерея </a>
+                        </li>
+                        <li>
+                            <a href="services.html" class="menu__link"> Услуги и цены </a>
+                        </li>
+                        <li>
+                            <a href="contacts.html" class="menu__link"> Контакты </a>
+                        </li>
 
-        <div class="header__right">
+                    </ul>
+                </nav>
+                </div>
 
-            <div class="nav__phone">
-                <p class="nav__textphone"> <i class="fas fa-mobile-alt"></i><b> 8 800 700 37 15 </b></p>
+                <div class="header__supmenu">
+                    <nav class="header__nav__supmenu">
+                    <ul class="header__suplist">
+
+                    <li>
+                        <a href="gallery_avto.html" class="supmenu__link"> Авто </a>
+                    </li>
+                    <li>
+                        <a href="gallery_interior.html" class="supmenu__link"> Интерьер </a>
+                    </li>
+                    <li>
+                        <a href="gallery_stucco.html" class="supmenu__link"> Лепнина </a>
+                    </li>
+
+                    </ul>
+                    </nav>
+                </div>
+               </div>
+
+
+
+                <div class="header__right">
+                <a href="#" class="header__phone">
+                    <p class="textphone"> <i class="fas fa-mobile-alt"></i><b> 8 800 700 37 15 </b></p>
+                </a>
+
+                <nav class="header__nav__social">
+                    <ul class="header__list">
+
+                        <li>
+                            <a href="error.html" class="social__link">
+                             <i class="fab fa-facebook-f"></i> </a>
+                        </li>
+                        <li>
+                            <a href="error.html" class="social__link">
+                            <i class="fab fa-vk"></i> </a>
+                        </li>
+                        <li>
+                            <a href="error.html" class="social__link">
+                            <i class="fab fa-twitter"></i> </a>
+                        </li>
+                        <li>
+                            <a href="error.html" class="social__link"> <i class="fab fa-google-plus-g"></i> </a>
+                        </li>
+                        <li>
+                            <a href="error.html" class="social__link"> <i class="fab fa-instagram"></i> </a>
+                        </li>
+
+                    </ul>
+                </nav>
+                </div>
+
             </div>
 
-            <nav class="nav__social" id="nav">
+            <div class="header__burger">
+                <span>
 
-                <a class="social__item" href="error.html">
-                <i class="fab fa-facebook-f"></i>
-                </a>
-                <a class="social__item" href="error.html">
-                <i class="fab fa-vk"></i>
-                </a>
-                <a class="social__item" href="error.html">
-                <i class="fab fa-twitter"></i>
-                </a>
-                <a class="social__item" href="error.html">
-                <i class="fab fa-google-plus-g"></i>
-                </a>
-                <a class="social__item" href="error.html">
-                <i class="fab fa-instagram"></i>
-                </a>
-            </nav>
-        </div>
+                </span>
+            </div>
 
-      </div>
+            </div>
 
-        <div class="header__subtitle">
 
-            <nav class="nav__submenu">
-                <a class="nav__sublink" href="gallery_avto.html"> Авто </a>
-                <a class="nav__sublink" href="gallery_interior.html"> Интерьер </a>
-                <a class="nav__sublink" href="gallery_stucco.html"> Лепнина </a>
-            </nav>
 
-        </div>
-    </div> <!-- Container -->
+
+
+
+
+</div>
 </header>
 
 
@@ -107,7 +150,7 @@
 
 
 
-<footer class="footer__gray">
+<footer class="footer__grey">
     <div class="footer__workplace">
             <p> © 2016 Аэрография авто «ДиДи» </p>
 
@@ -119,7 +162,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="assets/slick/slick.min.js"></script>
+<script src="assets/js/slick.min.js"></script>
 <script src="assets/js/scripts.js"></script>
 
 

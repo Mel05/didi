@@ -7,8 +7,7 @@ $('.header__burger').click(function(event) {
     $('body').toggleClass('lock');
 });
 
-
-    $('.header__list li a').each(function () {
+    $('.header__list li a, .header__suplist li a').each(function () {
         var location = window.location.href;
         var link = this.href;
         if(location == link) {
@@ -24,14 +23,37 @@ $('.header__burger').click(function(event) {
         }
     });
 
-
-
 /* Slider */
-$("[data-slider]").slick({
-    infinite: true,
-    fade: false,
-    slidesToShow: 1,
-    slidesToScroll: 1
+$('.slider').slick({
+    arrows:true,
+    dots:true,
+    adaptiveHeight:true, //адаптпция по высоте
+    slidesToShow:1,
+    slidesToScroll:1,
+    speed:250, //скорость прокрутки
+    adaptiveWeist:true
+});
+
+$('.slider__contacts').slick({
+    arrows:false,
+    dots:true,
+    adaptiveHeight:true, //адаптпция по высоте
+    slidesToShow:1,
+    slidesToScroll:1,
+    speed:250, //скорость прокрутки
+    adaptiveWeist:true
+});
+
+$('.slider__gallery').slick({
+    arrows:false,
+    dots:true,
+    adaptiveHeight:true, //адаптпция по высоте
+    slidesToShow:1,
+    slidesToScroll:1,
+    speed:250, //скорость прокрутки
+    adaptiveWeist:true
+});
+
 });
 
 
@@ -48,4 +70,4 @@ $("[data-slider]").slick({
 
 
 
-});
+
