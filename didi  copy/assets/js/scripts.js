@@ -51,7 +51,10 @@ $('.slider__gallery').slick({
     slidesToShow:1,
     slidesToScroll:1,
     speed:250, //скорость прокрутки
-    adaptiveWeist:true
+    adaptiveWeist:true,
+    variableWidth:false,
+    vertical: true,
+    verticalSwiping: true
 });
 
 });
