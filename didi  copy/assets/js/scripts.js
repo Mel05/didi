@@ -2,8 +2,13 @@ $(document).ready(function() {
 
 
 
+
+
+
+
+
 $('.header__burger').click(function(event) {
-    $('.header__burger, .header__menu, .header__body').toggleClass('active');
+    $('.header__burger, .header__menu, .header__menu__black, .header__body, .header__body__black').toggleClass('active');
     $('body').toggleClass('lock');
 });
 
@@ -56,6 +61,23 @@ $('.slider__gallery').slick({
     vertical: true,
     verticalSwiping: true
 });
+
+
+/* Header fixed */
+const navOffset = $("#header").offset().top;
+
+    $(window).scroll(function() {
+        const scrolled = $(this).scrollTop();
+
+        if (scrolled > navOffset) {
+            $("#header").addClass("fixed");
+        } else if (scrolled <= navOffset) {
+
+            $("#header").removeClass("fixed");
+        }
+    });
+
+
 
 });
 
